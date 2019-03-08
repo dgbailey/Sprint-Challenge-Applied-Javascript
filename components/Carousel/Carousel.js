@@ -6,12 +6,13 @@ class Carousel {
         this.left = this.element.querySelector('.left-button');
         this.right = this.element.querySelector('.right-button');
         this.images = this.element.querySelectorAll('img');
+        console.log(this.element);
         this.data_count = 0;
         this.index = 1;
         this.left.addEventListener('click',() => this.l_scroll());
         this.right.addEventListener('click',() => this.r_scroll());
         // this.images = Array.from(this.images).map(image => new SmartImg(image));
-        console.log(this.images);
+        
     }
     
     l_scroll(){
